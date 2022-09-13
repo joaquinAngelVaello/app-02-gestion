@@ -37,3 +37,26 @@ Pasos para activar un módulo:
 1. configurar las rutas del módulo en cuestión
 2. decirle a angular que existe ese módulo
 3. llamar desde las rutas principales a nuestro módulo
+
+# Pasos para crear lazy-load:
+*Proceso general de ejemplo*
+
+se crea el módulo:
+
+ng g m paises --routing
+
+
+se crea el componente:
+
+ng g c paises/pages/paises
+( la página con la tabla de paises)
+
+
+se crea el servicio:
+
+ng g s paises/services/paises
+
+
+1. configurar las rutas del módulo países
+2. configurar el lazy-load en app-routing module
+3. decir a angular que existe el módulo de países ( app.module )
