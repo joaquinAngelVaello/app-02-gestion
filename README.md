@@ -1,27 +1,39 @@
-# Gestion
+# Gestión
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.1.
+*Aplicaciópn para aprender esto:*
 
-## Development server
+- Crear una carpeta shared para guardar componente compartido
+- Crear componentes por funcionalidad ( Clientes, Proveedores, Paises )
+- Cargar módulos
+- Rutas hijas
+- Comunicar componentes
+- Pipes
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Lo que hemos hecho:
 
-## Code scaffolding
+Después de crear la aplicación:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Hemos creado módulos.
+ng g m clientes --routing
 
-## Build
+Luego hemos creado componentes para ese módulo
+ng g c clientes/pages/clientes
+ng g c clientes/pages/cliente-detalle
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+En el temario además, hemos creado un servicio
+ng g s temario/services/temario
 
-## Running unit tests
+TAREA:
+Crear un módulo que se llame pipes con el fichero de rutas
+Luego, crear 2 componentes página que se llamen
+pages/basicos
+pages/avanzados
+Solución:
+ng g m pipes --routing
+ng g c pipes/pages/basicos
+ng g c pipes/pages/avanzados
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Pasos para activar un módulo:
+1. configurar las rutas del módulo en cuestión
+2. decirle a angular que existe ese módulo
+3. llamar desde las rutas principales a nuestro módulo
