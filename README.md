@@ -60,3 +60,14 @@ ng g s paises/services/paises
 1. configurar las rutas del módulo países
 2. configurar el lazy-load en app-routing module
 3. decir a angular que existe el módulo de países ( app.module )
+
+# 3 día:
+
+- Comunicación entre componentes padre/hijo
+
+- Pipes
+
+- Servicios HTTP
+
+- Desplegar en github pages
+
