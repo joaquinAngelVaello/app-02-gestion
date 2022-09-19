@@ -7,6 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BasicosComponent implements OnInit {
 
+  nombre: string = 'joaquín ángel';
+
+  precio: number = 9523.4866;
+
+  fecha: Date = new Date();
+
   constructor() { }
 
   ngOnInit(): void {
